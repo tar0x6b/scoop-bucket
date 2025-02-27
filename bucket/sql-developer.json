@@ -7,16 +7,15 @@
 	"cookie": {
 		"oraclelicense": "accept-securebackup-cookie"
 	},
-	"extract_dir": "sqldeveloper",
 	"bin": [
 		[
-			"sqldeveloper.exe",
+			"sqldeveloper/sqldeveloper.exe",
 			"sqldeveloper"
 		]
 	],
 	"shortcuts": [
 		[
-			"sqldeveloper.exe",
+			"sqldeveloper/sqldeveloper.exe",
 			"SQL Developer"
 		]
 	],
