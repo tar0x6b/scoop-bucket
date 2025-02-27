@@ -1,0 +1,34 @@
+{
+	"homepage": "https://www.oracle.com/jp/database/sqldeveloper/",
+	"version": "24.3.1.347.1826",
+	"license": "https://www.oracle.com/downloads/licenses/oracle-free-license.html",
+	"url": "https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-24.3.1.347.1826-no-jre.zip",
+    "hash": "3390ef58972f1f255077c49e66b171b8664773bb16e37570a7ca16acc5afb8cb",
+	"cookie": {
+		"oraclelicense": "accept-securebackup-cookie"
+	},
+	"extract_dir": "sqldeveloper",
+	"bin": [
+		[
+			"sqldeveloper.exe",
+			"sqldeveloper"
+		]
+	],
+	"shortcuts": [
+		[
+			"sqldeveloper.exe",
+			"SQL Developer"
+		]
+	],
+	"checkver": {
+		"url": "https://www.oracle.com/jp/database/sqldeveloper/technologies/download/",
+		"re": "Version ([\\d.]+)"
+	},
+	"autoupdate": {
+		"url": "https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-$version-no-jre.zip",
+		"extract_dir": "sqldeveloper",
+		"hash": {
+			"url": "$url.sha256"
+		}
+	}
+}
